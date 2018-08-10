@@ -12,7 +12,7 @@ import {
 } from "react-native";
 import { connect } from "react-redux";
 import Icon from "react-native-vector-icons/Ionicons";
-import { deletePlace } from "../../store/actions/index";
+import { deleteFarm } from "../../store/actions/index";
 import MapboxGL from "@mapbox/react-native-mapbox-gl";
 import { lineString as makeLineString, lineString } from "@turf/helpers";
 const LATITUDE = 38.79930767201779;
@@ -61,7 +61,7 @@ class FarmDetail extends Component {
     };
 
     placeDeletedHandler = () => {
-        this.props.onDeletePlace(this.props.selectedPlace.key);
+        this.props.onDeleteFarm(this.props.selectedFarm._id);
         this.props.navigator.pop();
     };
 
@@ -70,7 +70,7 @@ class FarmDetail extends Component {
         if (this.state.intCoords.length > 0) {
 
             pointsOnMap = this.state.intCoords.map((point, i) => (
-                <View>
+                <View key={i}>
                     <MapboxGL.PointAnnotation
                         key={String(point[0] + point[1])}
                         id={String(point[0] + point[1])}
@@ -114,6 +114,12 @@ class FarmDetail extends Component {
                     <View >
                         <Text style={styles.placeName}>
                             {this.props.selectedFarm.name}
+                        </Text>
+                    </View>
+
+                    <View>
+                        <Text>
+                            {this.props.selectedFarm.description}
                         </Text>
                     </View>
 
@@ -201,7 +207,7 @@ const styles = StyleSheet.create({
 
 const mapDispatchToProps = dispatch => {
     return {
-        onDeletePlace: key => dispatch(deletePlace(key))
+        onDeleteFarm: id => dispatch(deleteFarm(id))
     };
 };
 

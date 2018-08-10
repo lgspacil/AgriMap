@@ -5,7 +5,8 @@ import {
   PLACE_ADDED,
   START_ADD_PLACE,
   ADD_NEW_PLACE,
-  SUBMIT_FARM_AREA
+  SUBMIT_FARM_AREA,
+  REMOVE_FARM
 } from "./actionTypes";
 import { uiStartLoading, uiStopLoading, authGetToken } from "./index";
 import axios from "axios";
@@ -19,6 +20,7 @@ export const submitFarmArea = (info) => {
       body: JSON.stringify({
         name: info.name,
         coords: info.coordinates,
+        description: info.description
       }),
       headers: {
         "Content-Type": "application/json"
@@ -31,22 +33,6 @@ export const submitFarmArea = (info) => {
       .then((res) => {
         console.log('the response is: ', res);
       })
-  }
-}
-
-export const submitFarmAreaWrong = (info) => {
-  console.log('in the submit farm area: ', info)
-  return dispatch => {
-    let url = "http://10.0.0.31:8080/submit_farm";
-    axios.post(url, {
-      info: info
-    })
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
   }
 }
 
@@ -68,21 +54,43 @@ export const getFarms = () => {
   }
 }
 
-export const getFarmsWrong = () => {
-  console.log('fetching all farms')
+export const deleteFarm = id => {
   return dispatch => {
-    let url = "http://10.0.0.31:8080/get_all_farms";
-    axios.get(url)
-      .then(function (response) {
-        console.log('all the farms are: ', response.data);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    let url = "http://10.0.0.31:8080/delete_farm";
+    fetch(url, {
+      method: "POST",
+      body: JSON.stringify({
+        id: id
+      }),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+    .catch((err) => {
+      console.log('the error is: ', err)
+    })
+    .then(res => res.json())
+    .then((res) => {
+      if(res == true){
+        console.log('the response from deleting the farm is: ', res);
+        dispatch(removeFarm(id));
+      }
+      
+    })
   }
 }
 
+export const removeFarm = id => {
+  console.log('removing the farm')
+  return {
+    type: REMOVE_FARM,
+    id: id
+  }
+}
+
+
 export const setFarms = farms => {
+  console.log('*************')
   return {
     type: SET_FARMS,
     farms: farms

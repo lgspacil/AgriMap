@@ -5,17 +5,16 @@ import Icon from 'react-native-vector-icons/Ionicons';
 const startTabs = () => {
     Promise.all([
         Icon.getImageSource(Platform.OS === 'android' ? "md-globe" : "ios-globe", 30),
-        Icon.getImageSource(Platform.OS === 'android' ? "md-share-alt" : "ios-share", 30),
+        Icon.getImageSource(Platform.OS === 'android' ? "md-add" : "ios-add", 30),
         Icon.getImageSource(Platform.OS === 'android' ? "md-menu" : "ios-menu", 30),
         Icon.getImageSource(Platform.OS === 'android' ? "md-card" : "ios-card", 30),
         Icon.getImageSource(Platform.OS === 'android' ? "md-navigate" : "ios-navigate", 30),
         Icon.getImageSource(Platform.OS === 'android' ? "md-locate" : "ios-locate", 30)
     ]).then(sources => {
-        console.log('!!!!!', sources);
         Navigation.startTabBasedApp({
             tabs: [
                 {
-                    screen: "agri-mapp.EarthquakeScreen",
+                    screen: "agri-mapp.HeatMapScreen",
                     label: "Heat Map",
                     title: "Heat Map",
                     icon: sources[0],
@@ -38,8 +37,8 @@ const startTabs = () => {
                 },
                 {
                     screen: "agri-mapp.AddFarmScreen",
-                    label: "Share Place",
-                    title: "Share Place",
+                    label: "Add Farm",
+                    title: "Add Farm",
                     icon: sources[1],
                     navigatorButtons: {
                         leftButtons: [

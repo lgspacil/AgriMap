@@ -21,8 +21,11 @@ import MapboxGL from "@mapbox/react-native-mapbox-gl";
 import { lineString as makeLineString, lineString } from "@turf/helpers";
 import MainText from "../../components/UI/MainText/MainText";
 import HeadingText from "../../components/UI/HeadingText/HeadingText";
-import {submitFarmArea} from "../../store/actions/index";
+import { submitFarmArea } from "../../store/actions/index";
 import { getFarms } from "../../store/actions/index";
+import validate from "../../utility/validation";
+import PlaceInput from "../../components/PlaceInput/PlaceInput";
+import DescriptionInput from "../../components/DescriptionInput/DescriptionInput";
 
 MapboxGL.setAccessToken('pk.eyJ1Ijoic3BhY2lsbHVjYXMiLCJhIjoiY2pra2xhaHgyMXJtZjNxcDliZW01ZHhkZyJ9.rp87COSDjcs097pfP4iFNw');
 
@@ -31,65 +34,27 @@ class AddFarm extends Component {
         name: "",
         points: [],
         connected: true,
-        info: {
-            "type": "FeatureCollection",
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -77.12911152370515,
-                            38.79930767201779
-                        ]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            -77.16797018042666,
-                            38.766521892689916
-                        ]
-                    }
-                },
-            ]
+        controls: {
+            placeName: {
+                value: "",
+                valid: false,
+                touched: false,
+                validationRules: {
+                    notEmpty: true
+                }
+            },
+            description: {
+                value: "",
+                valid: false,
+                touched: false,
+                validationRules: {
+                    notEmpty: true
+                }
+            }
         }
     };
 
     onPress = (e, c) => {
-
-        // new feature is needed so you can show the farms on a heat map
-        let newFeature = {
-            "type": "Feature",
-            "properties": {},
-            "geometry": {
-                "type": "Point",
-                "coordinates": []
-            }
-        }
-        // adding a new coordinate to a new feature
-        newFeature.geometry.coordinates.push(e.geometry.coordinates[0]);
-        newFeature.geometry.coordinates.push(e.geometry.coordinates[1]);
-
-        this.setState(prevState => {
-            return {
-                info: {
-                    ...prevState.info,
-                    features: [
-                        ...prevState.info.features,
-                        newFeature
-                    ]
-                }
-            }
-        })
-
         this.setState({ points: [...this.state.points, e.geometry.coordinates] });
     };
 
@@ -97,11 +62,6 @@ class AddFarm extends Component {
         this.setState({
             connected: this.state.connected ? false : true
         })
-    }
-
-    componentDidMount() {
-        console.log('component mounted')
-        this.props.onLoadPlaces();
     }
 
     deletePoint = (i) => {
@@ -116,7 +76,7 @@ class AddFarm extends Component {
 
     submit = () => {
         console.log('submit with info of: ', this.state.name, this.state.points);
-        this.props.onSubmitFarmArea({name: this.state.name, coordinates: this.state.points})
+        this.props.onSubmitFarmArea({ name: this.state.name, coordinates: this.state.points })
     }
 
     updateInputState = (text) => {
@@ -124,6 +84,48 @@ class AddFarm extends Component {
             name: text
         })
     }
+
+    placeNameChangedHandler = val => {
+        this.setState(prevState => {
+            return {
+                controls: {
+                    ...prevState.controls,
+                    placeName: {
+                        ...prevState.controls.placeName,
+                        value: val,
+                        valid: validate(val, prevState.controls.placeName.validationRules),
+                        touched: true
+                    }
+                }
+            };
+        });
+    };
+
+    descriptionChangedHandler = val => {
+        this.setState(prevState => {
+            return {
+                controls: {
+                    ...prevState.controls,
+                    description: {
+                        ...prevState.controls.description,
+                        value: val,
+                        valid: validate(val, prevState.controls.description.validationRules),
+                        touched: true
+                    }
+                }
+            };
+        });
+    };
+
+    placeAddedHandler = () => {
+        this.props.onSubmitFarmArea({ 
+            name: this.state.controls.placeName.value, 
+            coordinates: this.state.points,
+            description: this.state.controls.description.value 
+        })
+
+        // this.props.navigator.switchToTab({tabIndex: 0});
+    };
 
     render() {
         let pointsOnMap = null;
@@ -181,7 +183,7 @@ class AddFarm extends Component {
                         <HeadingText>Map out an area</HeadingText>
                     </MainText>
 
-                    <TextInput style={{width: '100%'}}placeholder="Enter Name" onChangeText={val => this.updateInputState(val)}></TextInput>
+                    {/* <TextInput style={{width: '100%'}}placeholder="Enter Name" onChangeText={val => this.updateInputState(val)}></TextInput> */}
                     <View style={styles.mapContainer}>
                         <MapboxGL.MapView
                             onPress={this.onPress}
@@ -192,9 +194,32 @@ class AddFarm extends Component {
                             {linesOnMap}
                         </MapboxGL.MapView>
                     </View>
+
+                    <PlaceInput
+                        placeData={this.state.controls.placeName}
+                        onChangeText={this.placeNameChangedHandler}
+                    />
+
+                    <DescriptionInput
+                        onChangeText={this.descriptionChangedHandler}
+                        multiline={true}
+                        descriptionData={this.state.controls.description}
+                    />
+
                     <View>
-                    {/* <Button title="Toggle Area Mapped" onPress={this.toggleFill}/> */}
-                    <Button title="Submit Area Mappsed" onPress={this.submit}/>
+                        {/* <Button title="Toggle Area Mapped" onPress={this.toggleFill}/> */}
+
+                        <View style={styles.button}>
+                            <Button
+                                title="Share the Place!"
+                                onPress={this.placeAddedHandler}
+                                color="orange"
+                                disabled={
+                                    !this.state.controls.placeName.valid ||
+                                    !this.state.controls.description.valid
+                                }
+                            />
+                        </View>
                     </View>
                 </View>
             </ScrollView>
@@ -281,13 +306,17 @@ const styles = StyleSheet.create({
         borderRightColor: "transparent",
         borderBottomColor: "transparent",
         borderLeftColor: "transparent"
+    },
+    button: {
+        margin: 8,
+        width: '100%',
     }
 });
 
 // const mapStateToProps = state => {
-    // return {
-    //     isLoading: state.ui.isLoading
-    // };
+// return {
+//     isLoading: state.ui.isLoading
+// };
 // };
 
 const mapDispatchToProps = dispatch => {
@@ -298,5 +327,5 @@ const mapDispatchToProps = dispatch => {
         // onAutoSignIn: () => dispatch(authAutoSignIn())
     };
 };
-  
+
 export default connect(null, mapDispatchToProps)(AddFarm);

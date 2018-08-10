@@ -14,6 +14,7 @@ import {
     ActivityIndicator
   } from "react-native";
 import { connect } from "react-redux";
+import { AsyncStorage } from "react-native";
 import { testSignIn, autoLogin } from "../../store/actions/index";
 
   class Auth extends Component {
@@ -27,7 +28,10 @@ import { testSignIn, autoLogin } from "../../store/actions/index";
 
       componentDidMount(){
         console.log('auto loading attempt');
+        this.props.onAutoLogin()
       }
+
+
 
       updateInputState = (key, val) => {
           if(key == "password"){

@@ -7,7 +7,8 @@ export {
   startAddPlace,
   addNewPlace,
   submitFarmArea,
-  getFarms
+  getFarms,
+  deleteFarm
 } from "./farms";
 export { tryAuth, authGetToken, authAutoSignIn, authLogout, testSignIn, autoLogin } from "./auth";
 export { uiStartLoading, uiStopLoading } from "./ui";
