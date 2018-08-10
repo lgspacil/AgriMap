@@ -3,12 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_2e7ad1005a6b0f09823ee2426871bf3c4c883fd3.jar" />
+        revision="26.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_ede6deb4457fdfeede6c13e7903809b78deddc87.jar" />
     </item>
     <item
         is-multidex="false"
@@ -21,12 +21,480 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu-toolbar/1.5.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="55d7bf547c88cb7c8c7c5cdbf3b06dd66c9750f8">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.balysv.materialmenu-material-menu-toolbar-1.5.4_77955fdaf8485760a0778436a4d3fa9063663135.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
         <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_26636382545bcec646e2944df1dca42d3165264c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_3c93b86f69187f58fa930e373779cdc6bb45be18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_2e7ad1005a6b0f09823ee2426871bf3c4c883fd3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.2.0/a09926806199499a20b2f5168779499abfa33342/converter-gson-2.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a09926806199499a20b2f5168779499abfa33342">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/converter-gson-2.2.0_b9472cb0395928fc66a5824ee26348fdb08bcc29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_886fa34915f61cfda1855e4a42589043a0bb9168.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/27.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b432e82447a3af781e927b9ba0bbb9fe2a496d4a">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-27.0.2_7d9376426819d2121bdb163e982c63b2972c3619.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.3/7d7f60c4783872861222166f6164215f8951c7b1/common-1.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7d7f60c4783872861222166f6164215f8951c7b1">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/common-1.0.3_6a3e4447f8cc257a14469169f164c200f8a08716.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_a69f6a3b5a4634b970b7aa98c79f69e70ff4f093.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.3.1_ba59a4569987afac9b1bec32e24cf11b6d0cd1dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_63f44ad672627db99f2cc7660a2da65eaa4f69d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.2.0/41e67dba73c3347e4503761642c39d0e06ca1f2/retrofit-2.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="041e67dba73c3347e4503761642c39d0e06ca1f2">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/retrofit-2.2.0_a3ce85894968d10f155df1a9ff33e8245e311fc5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_f98a26c7ee1fbc2fa39bb5b16e37ba676d1990a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/library-2.4.0_75828d0d4b6da5df69bb07e700a50475641a4d85.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/AgriMap/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f2cf527de8d0bd35d72088fafea02395ba4a9eec">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/AgriMap-react-native-vector-icons-unspecified_ea35ab0ddae8bbfa5202270693c00bc52ac75a49.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/27.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ac2ce6027755bcf49442e70597bec0feb9064f68">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-27.0.2_4b39943f581f8010e01b486b8f78a4283816559b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_8f53a985eb17dbf585af6f5906a6122a8317cb11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_a69f6a3b5a4634b970b7aa98c79f69e70ff4f093.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/AgriMap/react-native-navigation/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ab538d978c1fcab7f89c5f96ad75f1305d4f7e80">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/AgriMap-react-native-navigation-unspecified_89cee45ef6dfeac671ebfea3872988481ff96f2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_b1df130571bddef75c214fc03c255c03b4d5306b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/27.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ed6560f31a6a40b5965f5879d8f2eab1f68def05">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-27.0.2_604bb62a5646cca22a40ce14fcee32c1a023a7e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_886fa34915f61cfda1855e4a42589043a0bb9168.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.3.1_bea404521e21d28c4bd0cd58221bf718caed61dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapzen.android/lost/3.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d35b57785e805406538454943d0ed0ba97f6e653">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.mapzen.android-lost-3.0.4_3eadb9c00c2126617b1f60bec246dafa2dc23adb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/AgriMap/mapbox-react-native-mapbox-gl/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="09861e7a19dfd11bfa59ac13597cee56fba284cf">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/AgriMap-mapbox-react-native-mapbox-gl-unspecified_a8f2372b0896b2bbc430aef55cfd2f24b9928079.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_3c93b86f69187f58fa930e373779cdc6bb45be18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/27.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="caa03787689212c10939f308a55a8dc8a3333ed2">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-27.0.2_76f936ef3de7efb7ccac8db511abf5e8438c89b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_bd6d1e29162602142257659ef3338e67665a9a40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_7a8f00d52fbf8181d1dd1f65ded43fc8d3323d45.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/library-2.4.0_75828d0d4b6da5df69bb07e700a50475641a4d85.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="04cd0cacbedcb338f64665b88bad64d145325fbd">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-27.0.2_243ed909089cf69a4b425cfc7713e564cea4c99b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.3.1_ba59a4569987afac9b1bec32e24cf11b6d0cd1dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-java-geojson/2.2.9/c53f47c9fdf762ae6fd86efd056da7a1651a0fed/mapbox-java-geojson-2.2.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c53f47c9fdf762ae6fd86efd056da7a1651a0fed">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/mapbox-java-geojson-2.2.9_1e4770d7a4239984bc8d08dcf4573d85d2ab437f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_ede6deb4457fdfeede6c13e7903809b78deddc87.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-plugin-locationlayer/0.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b1cad667a0222bae157d31a08af83400e470a05f">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.mapbox.mapboxsdk-mapbox-android-plugin-locationlayer-0.3.0_aef0d8558dcf4634bb201c8c7a7cf2d05ddff7bf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_7a6a1aa319020f9c7fe3f207b84e4f6e11dc2529.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/27.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fe3916317a699975bcce0cba2d13fd2d8cf88922">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-27.0.2_8d8daf9bc862053bc4545acbb13aec7358733a18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu/1.5.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="1f6ff1728c297524e82b875ce2dfda946f4bca41">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.balysv.materialmenu-material-menu-1.5.4_d90cca746b264b848ac1f84853ba26d109b067cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.2/b9ef4342c934a1a8b107506273dc8061662a322/support-annotations-27.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0b9ef4342c934a1a8b107506273dc8061662a322">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/support-annotations-27.0.2_27305810ddce8bd372f79802f83efd09e095bb09.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_b1df130571bddef75c214fc03c255c03b4d5306b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_bd6d1e29162602142257659ef3338e67665a9a40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-plugin-localization/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6a58a614ff6c48c46b27cba3859c069204bd7fb6">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.mapbox.mapboxsdk-mapbox-android-plugin-localization-0.1.0_136fea2cebb138e775eb76ce14b16f08d3558695.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/5.4.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="68eea7ff8efd77b77cdca73805f85caf7e40be04">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.mapbox.mapboxsdk-mapbox-android-sdk-5.4.1_0c8d089e0afc43ef2ec891ea16731c565467fb4f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_f98a26c7ee1fbc2fa39bb5b16e37ba676d1990a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_8f53a985eb17dbf585af6f5906a6122a8317cb11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-java-core/2.2.9/c18aa432e1830aba56d861494f131a34a0b8ce69/mapbox-java-core-2.2.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c18aa432e1830aba56d861494f131a34a0b8ce69">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/mapbox-java-core-2.2.9_5489755745e21a417f174aa59387a9b952e640d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_63f44ad672627db99f2cc7660a2da65eaa4f69d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_04a8cfcb32d75a9ebd11a52fb2798f5baf76f52d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.aurelhubert/ahbottomnavigation/2.0.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c8ba41bea7f78f8bdf3a803b9d08eb3fff416706">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.aurelhubert-ahbottomnavigation-2.0.6_203358d93ff073a92323f099257d33c4b871edf2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_c4feed3d2dd1c8b1888bacdb8fed925c26c9692e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_3c93b86f69187f58fa930e373779cdc6bb45be18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_2e7ad1005a6b0f09823ee2426871bf3c4c883fd3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_c4feed3d2dd1c8b1888bacdb8fed925c26c9692e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -57,66 +525,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_3c93b86f69187f58fa930e373779cdc6bb45be18.jar" />
+        revision="26.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.3.1_bea404521e21d28c4bd0cd58221bf718caed61dd.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_2e7ad1005a6b0f09823ee2426871bf3c4c883fd3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.1_69c94dc36c5b943e63c1e7504e6bbd64bd894e5f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_a69f6a3b5a4634b970b7aa98c79f69e70ff4f093.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="95519720620b553f63afc789beba9ad582807f7c">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.3.1_ba59a4569987afac9b1bec32e24cf11b6d0cd1dd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.1_e5445fc4dd79f2005c15f578c16855db54289846.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.1_7ccbcfcd722c1771200116e6886f69f721331754.jar" />
+        revision="26.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.3.1_15b69e3d7f2ac39881b7b5443731c74695dc0a20.jar" />
     </item>
     <item
         is-multidex="false"
@@ -129,21 +552,39 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/AgriMap/react-native-vector-icons/unspecified/jars/classes.jar"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.1"
-        sha1="f2cf527de8d0bd35d72088fafea02395ba4a9eec">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/AgriMap-react-native-vector-icons-unspecified_ea35ab0ddae8bbfa5202270693c00bc52ac75a49.jar" />
+        revision="26.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_04a8cfcb32d75a9ebd11a52fb2798f5baf76f52d.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_ad2a84c36da9a4d5af549e2459c242362ecb0445.jar" />
+        revision="26.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_7a6a1aa319020f9c7fe3f207b84e4f6e11dc2529.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.aurelhubert/ahbottomnavigation/2.0.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c8ba41bea7f78f8bdf3a803b9d08eb3fff416706">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.aurelhubert-ahbottomnavigation-2.0.6_203358d93ff073a92323f099257d33c4b871edf2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-java-services/2.2.9/32099854fcd364940c562d83c1394aa917faa79b/mapbox-java-services-2.2.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="32099854fcd364940c562d83c1394aa917faa79b">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/mapbox-java-services-2.2.9_ddff8f8018ffc6c1c5a8b3588d38b7bef551c730.jar" />
     </item>
     <item
         is-multidex="false"
@@ -165,15 +606,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_886fa34915f61cfda1855e4a42589043a0bb9168.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
         jumboMode="false"
         optimize="true"
@@ -183,21 +615,57 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.1"
-        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.1_e191405e7e7bf1ecebe3d709cd9d5c0bf59bf109.jar" />
+        revision="26.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.1_042b4c39503a9942f9bdb2fe32c86de763c461c8.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/jars/classes.jar"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-services/2.2.9/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.1"
-        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.3.1_bea404521e21d28c4bd0cd58221bf718caed61dd.jar" />
+        revision="26.0.1"
+        sha1="9adc627fc283339f926c4e10d82a42bc39e0d77f">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.mapbox.mapboxsdk-mapbox-android-services-2.2.9_232196880afa9c5aca2a4c05d6e75092caa8c071.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.55.4_562475e24cd9b8b77f7628213faeb96ecf2c0e72.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_2e7ad1005a6b0f09823ee2426871bf3c4c883fd3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_07d1a6b58c7aa8ed5211a260bd268ab4c30a71e3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_26636382545bcec646e2944df1dca42d3165264c.jar" />
     </item>
     <item
         is-multidex="false"
@@ -219,12 +687,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/android.arch.lifecycle/runtime/1.0.3/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.1"
-        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.3.1_f56c0ee03b5506fd605e6f1d3f5dce539d7f3f7b.jar" />
+        revision="26.0.1"
+        sha1="d7cc5473b9cf4ea159a263cd477fb3ecb2987b96">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/android.arch.lifecycle-runtime-1.0.3_a63b8b45e54f465048e76b83a3ff9a18e9aa50c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.9.1/84b4b7d1c4a238e7899972b7446c250691e65f1f/okhttp-3.9.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="84b4b7d1c4a238e7899972b7446c250691e65f1f">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/okhttp-3.9.1_9b6015c8f004520f639198876867cb1d228ccd25.jar" />
     </item>
     <item
         is-multidex="false"
@@ -255,39 +732,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/AgriMap/react-native-vector-icons/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.1"
-        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_7a8f00d52fbf8181d1dd1f65ded43fc8d3323d45.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_ad2a84c36da9a4d5af549e2459c242362ecb0445.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/library-2.4.0_75828d0d4b6da5df69bb07e700a50475641a4d85.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.1_e70436bc1cb8fc301903394b3fbd32358d8542fd.jar" />
+        revision="26.0.1"
+        sha1="f2cf527de8d0bd35d72088fafea02395ba4a9eec">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/AgriMap-react-native-vector-icons-unspecified_ea35ab0ddae8bbfa5202270693c00bc52ac75a49.jar" />
     </item>
     <item
         is-multidex="false"
@@ -300,30 +750,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_ede6deb4457fdfeede6c13e7903809b78deddc87.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_7a6a1aa319020f9c7fe3f207b84e4f6e11dc2529.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
         <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_f98a26c7ee1fbc2fa39bb5b16e37ba676d1990a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.jakewharton.timber/timber/4.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c4b2d07f780d8b29d39c0daf1129d544e726cc1b">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.jakewharton.timber-timber-4.6.0_18b60b53e4b9d6d2d2147147484bf9d745f2f05e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -336,30 +777,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.1"
-        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_305b49dfb389923bc3354c374ded36a9c6993cb2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_b1df130571bddef75c214fc03c255c03b4d5306b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_bd6d1e29162602142257659ef3338e67665a9a40.jar" />
+        revision="26.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_7a8f00d52fbf8181d1dd1f65ded43fc8d3323d45.jar" />
     </item>
     <item
         is-multidex="false"
@@ -372,21 +795,30 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/27.0.2/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_f98a26c7ee1fbc2fa39bb5b16e37ba676d1990a2.jar" />
+        revision="26.0.1"
+        sha1="618f75fe11febf263e3234c7da7dc892232a5608">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-27.0.2_8ced91323096b58eff88b5c512c6297f5cc50b88.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.1"
-        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_8f53a985eb17dbf585af6f5906a6122a8317cb11.jar" />
+        revision="26.0.1"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/gson-2.8.0_afca1bcab2fca5a3ed614c62e0b4ff7ff8c55a92.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/common-1.0.0_64522a5b8f9e4009d8a9fcb71b9d9a85c05b657b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -399,12 +831,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-telemetry/2.2.9/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_63f44ad672627db99f2cc7660a2da65eaa4f69d8.jar" />
+        revision="26.0.1"
+        sha1="612aa385190830bd6db2f01552caf3519835dc9a">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.mapbox.mapboxsdk-mapbox-android-telemetry-2.2.9_779ab3fdd8b666b7a7b18574f6b0cfb1504da6f5.jar" />
     </item>
     <item
         is-multidex="false"
@@ -417,48 +849,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_04a8cfcb32d75a9ebd11a52fb2798f5baf76f52d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.aurelhubert/ahbottomnavigation/2.0.6/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c8ba41bea7f78f8bdf3a803b9d08eb3fff416706">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.aurelhubert-ahbottomnavigation-2.0.6_203358d93ff073a92323f099257d33c4b871edf2.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
         <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_7a6a1aa319020f9c7fe3f207b84e4f6e11dc2529.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lucasspacil/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_212ae21d0980ee0b23f6362eacfd2ddbf862092d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_c4feed3d2dd1c8b1888bacdb8fed925c26c9692e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -471,12 +867,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jar="/Users/lucasspacil/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.6.0/81887458b69ddc32722df7e4c35235fd74e6a8ba/logging-interceptor-3.6.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_3c93b86f69187f58fa930e373779cdc6bb45be18.jar" />
+        revision="26.0.1"
+        sha1="81887458b69ddc32722df7e4c35235fd74e6a8ba">
+        <dex dex="/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/pre-dexed/debug/logging-interceptor-3.6.0_da17e73ea33969e4a1e0fd660cb14a5eaf1b874e.jar" />
     </item>
 
 </items>

@@ -6,18 +6,18 @@
                 "to": {
                     "startLine": 2,
                     "startColumn": 4,
-                    "startOffset": 55,
+                    "startOffset": 105,
                     "endColumn": 115,
-                    "endOffset": 166
+                    "endOffset": 216
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 55,
+                        "startOffset": 105,
                         "endColumn": 115,
-                        "endOffset": 166
+                        "endOffset": 216
                     }
                 }
             },
@@ -25,18 +25,18 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 171,
-                    "endColumn": 107,
-                    "endOffset": 274
+                    "startOffset": 221,
+                    "endColumn": 100,
+                    "endOffset": 317
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 171,
-                        "endColumn": 107,
-                        "endOffset": 274
+                        "startOffset": 221,
+                        "endColumn": 100,
+                        "endOffset": 317
                     }
                 }
             },
@@ -44,18 +44,18 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 279,
-                    "endColumn": 122,
-                    "endOffset": 397
+                    "startOffset": 322,
+                    "endColumn": 112,
+                    "endOffset": 430
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 279,
-                        "endColumn": 122,
-                        "endOffset": 397
+                        "startOffset": 322,
+                        "endColumn": 112,
+                        "endOffset": 430
                     }
                 }
             },
@@ -63,18 +63,18 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 402,
-                    "endColumn": 100,
-                    "endOffset": 498
+                    "startOffset": 435,
+                    "endColumn": 86,
+                    "endOffset": 517
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 402,
-                        "endColumn": 100,
-                        "endOffset": 498
+                        "startOffset": 435,
+                        "endColumn": 86,
+                        "endOffset": 517
                     }
                 }
             },
@@ -82,18 +82,18 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 503,
-                    "endColumn": 112,
-                    "endOffset": 611
+                    "startOffset": 522,
+                    "endColumn": 108,
+                    "endOffset": 626
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 503,
-                        "endColumn": 112,
-                        "endOffset": 611
+                        "startOffset": 522,
+                        "endColumn": 108,
+                        "endOffset": 626
                     }
                 }
             },
@@ -101,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 616,
-                    "endColumn": 86,
-                    "endOffset": 698
+                    "startOffset": 631,
+                    "endColumn": 120,
+                    "endOffset": 747
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 616,
-                        "endColumn": 86,
-                        "endOffset": 698
+                        "startOffset": 631,
+                        "endColumn": 120,
+                        "endOffset": 747
                     }
                 }
             },
@@ -120,18 +120,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 703,
-                    "endColumn": 108,
-                    "endOffset": 807
+                    "startOffset": 752,
+                    "endColumn": 81,
+                    "endOffset": 829
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 703,
-                        "endColumn": 108,
-                        "endOffset": 807
+                        "startOffset": 752,
+                        "endColumn": 81,
+                        "endOffset": 829
                     }
                 }
             },
@@ -139,18 +139,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 812,
-                    "endColumn": 120,
-                    "endOffset": 928
+                    "startOffset": 834,
+                    "endColumn": 80,
+                    "endOffset": 910
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 812,
-                        "endColumn": 120,
-                        "endOffset": 928
+                        "startOffset": 834,
+                        "endColumn": 80,
+                        "endOffset": 910
                     }
                 }
             },
@@ -158,18 +158,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 933,
-                    "endColumn": 81,
-                    "endOffset": 1010
+                    "startOffset": 915,
+                    "endColumn": 84,
+                    "endOffset": 995
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 933,
-                        "endColumn": 81,
-                        "endOffset": 1010
+                        "startOffset": 915,
+                        "endColumn": 84,
+                        "endOffset": 995
                     }
                 }
             },
@@ -177,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1015,
-                    "endColumn": 80,
-                    "endOffset": 1091
+                    "startOffset": 1000,
+                    "endColumn": 108,
+                    "endOffset": 1104
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1015,
-                        "endColumn": 80,
-                        "endOffset": 1091
+                        "startOffset": 1000,
+                        "endColumn": 108,
+                        "endOffset": 1104
                     }
                 }
             },
@@ -196,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1096,
-                    "endColumn": 84,
-                    "endOffset": 1176
+                    "startOffset": 1109,
+                    "endColumn": 108,
+                    "endOffset": 1213
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1096,
-                        "endColumn": 84,
-                        "endOffset": 1176
+                        "startOffset": 1109,
+                        "endColumn": 108,
+                        "endOffset": 1213
                     }
                 }
             },
@@ -215,18 +215,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1181,
-                    "endColumn": 108,
-                    "endOffset": 1285
+                    "startOffset": 1218,
+                    "endColumn": 99,
+                    "endOffset": 1313
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1181,
-                        "endColumn": 108,
-                        "endOffset": 1285
+                        "startOffset": 1218,
+                        "endColumn": 99,
+                        "endOffset": 1313
                     }
                 }
             },
@@ -234,18 +234,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1290,
-                    "endColumn": 108,
-                    "endOffset": 1394
+                    "startOffset": 1318,
+                    "endColumn": 109,
+                    "endOffset": 1423
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1290,
-                        "endColumn": 108,
-                        "endOffset": 1394
+                        "startOffset": 1318,
+                        "endColumn": 109,
+                        "endOffset": 1423
                     }
                 }
             },
@@ -253,18 +253,18 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1399,
-                    "endColumn": 99,
-                    "endOffset": 1494
+                    "startOffset": 1428,
+                    "endColumn": 103,
+                    "endOffset": 1527
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1399,
-                        "endColumn": 99,
-                        "endOffset": 1494
+                        "startOffset": 1428,
+                        "endColumn": 103,
+                        "endOffset": 1527
                     }
                 }
             },
@@ -272,18 +272,18 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1499,
-                    "endColumn": 109,
-                    "endOffset": 1604
+                    "startOffset": 1532,
+                    "endColumn": 112,
+                    "endOffset": 1640
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1499,
-                        "endColumn": 109,
-                        "endOffset": 1604
+                        "startOffset": 1532,
+                        "endColumn": 112,
+                        "endOffset": 1640
                     }
                 }
             },
@@ -291,18 +291,18 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1609,
-                    "endColumn": 103,
-                    "endOffset": 1708
+                    "startOffset": 1645,
+                    "endColumn": 175,
+                    "endOffset": 1816
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1609,
-                        "endColumn": 103,
-                        "endOffset": 1708
+                        "startOffset": 1645,
+                        "endColumn": 175,
+                        "endOffset": 1816
                     }
                 }
             },
@@ -310,18 +310,18 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1713,
-                    "endColumn": 112,
-                    "endOffset": 1821
+                    "startOffset": 1821,
+                    "endColumn": 100,
+                    "endOffset": 1917
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 1713,
-                        "endColumn": 112,
-                        "endOffset": 1821
+                        "startOffset": 1821,
+                        "endColumn": 100,
+                        "endOffset": 1917
                     }
                 }
             },
@@ -329,18 +329,18 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1826,
-                    "endColumn": 129,
-                    "endOffset": 1951
+                    "startOffset": 1922,
+                    "endColumn": 180,
+                    "endOffset": 2098
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/5.4.1/res/values-lt/values-lt.xml",
                     "position": {
-                        "startLine": 19,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 1826,
-                        "endColumn": 129,
-                        "endOffset": 1951
+                        "startOffset": 55,
+                        "endColumn": 180,
+                        "endOffset": 231
                     }
                 }
             },
@@ -348,18 +348,18 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1956,
-                    "endColumn": 100,
-                    "endOffset": 2052
+                    "startOffset": 2103,
+                    "endColumn": 73,
+                    "endOffset": 2172
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/5.4.1/res/values-lt/values-lt.xml",
                     "position": {
-                        "startLine": 20,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 1956,
-                        "endColumn": 100,
-                        "endOffset": 2052
+                        "startOffset": 236,
+                        "endColumn": 73,
+                        "endOffset": 305
                     }
                 }
             },
@@ -367,18 +367,18 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 2057,
-                    "endColumn": 82,
-                    "endOffset": 2135
+                    "startOffset": 2177,
+                    "endColumn": 83,
+                    "endOffset": 2256
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/5.4.1/res/values-lt/values-lt.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 2057,
-                        "endColumn": 82,
-                        "endOffset": 2135
+                        "startOffset": 310,
+                        "endColumn": 83,
+                        "endOffset": 389
                     }
                 }
             },
@@ -386,18 +386,189 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 2140,
-                    "endColumn": 100,
-                    "endOffset": 2236
+                    "startOffset": 2261,
+                    "endColumn": 71,
+                    "endOffset": 2328
                 },
                 "from": {
-                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-lt/values-lt.xml",
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/5.4.1/res/values-lt/values-lt.xml",
                     "position": {
-                        "startLine": 22,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 2140,
+                        "startOffset": 394,
+                        "endColumn": 71,
+                        "endOffset": 461
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2333,
+                    "endColumn": 102,
+                    "endOffset": 2431
+                },
+                "from": {
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/5.4.1/res/values-lt/values-lt.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 466,
+                        "endColumn": 102,
+                        "endOffset": 564
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2436,
+                    "endColumn": 77,
+                    "endOffset": 2509
+                },
+                "from": {
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/5.4.1/res/values-lt/values-lt.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 569,
+                        "endColumn": 77,
+                        "endOffset": 642
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2514,
+                    "endColumn": 131,
+                    "endOffset": 2641
+                },
+                "from": {
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/5.4.1/res/values-lt/values-lt.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 647,
+                        "endColumn": 131,
+                        "endOffset": 774
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2646,
+                    "endColumn": 134,
+                    "endOffset": 2776
+                },
+                "from": {
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/5.4.1/res/values-lt/values-lt.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 779,
+                        "endColumn": 134,
+                        "endOffset": 909
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2781,
+                    "endColumn": 184,
+                    "endOffset": 2961
+                },
+                "from": {
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/5.4.1/res/values-lt/values-lt.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 914,
+                        "endColumn": 184,
+                        "endOffset": 1094
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2966,
+                    "endColumn": 125,
+                    "endOffset": 3087
+                },
+                "from": {
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/5.4.1/res/values-lt/values-lt.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1099,
+                        "endColumn": 125,
+                        "endOffset": 1220
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 3092,
+                    "endColumn": 132,
+                    "endOffset": 3220
+                },
+                "from": {
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/5.4.1/res/values-lt/values-lt.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1225,
+                        "endColumn": 132,
+                        "endOffset": 1353
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 3225,
+                    "endColumn": 82,
+                    "endOffset": 3303
+                },
+                "from": {
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/values-lt/values-lt.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1922,
+                        "endColumn": 82,
+                        "endOffset": 2000
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 3308,
+                    "endColumn": 100,
+                    "endOffset": 3404
+                },
+                "from": {
+                    "file": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/27.0.2/res/values-lt/values-lt.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
                         "endColumn": 100,
-                        "endOffset": 2236
+                        "endOffset": 151
                     }
                 }
             }

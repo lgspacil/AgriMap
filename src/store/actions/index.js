@@ -4,7 +4,10 @@ export {
   deletePlace,
   getPlaces,
   placeAdded,
-  startAddPlace
-} from "./places";
-export { tryAuth, authGetToken, authAutoSignIn, authLogout } from "./auth";
+  startAddPlace,
+  addNewPlace,
+  submitFarmArea,
+  getFarms
+} from "./farms";
+export { tryAuth, authGetToken, authAutoSignIn, authLogout, testSignIn, autoLogin } from "./auth";
 export { uiStartLoading, uiStopLoading } from "./ui";

@@ -94,13 +94,13 @@ def enableSeparateBuildPerCPUArchitecture = false
 def enableProguardInReleaseBuilds = false
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.1"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
 
     defaultConfig {
         applicationId "com.agrimap"
         minSdkVersion 16
-        targetSdkVersion 22
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         ndk {
@@ -145,6 +145,7 @@ dependencies {
     compile "com.facebook.react:react-native:+"
     compile project(':react-native-navigation')
     compile project(':react-native-vector-icons')
+    compile project(':mapbox-react-native-mapbox-gl')
 }
 
 // Run this once to be able to run the application with BUCK

@@ -18,8 +18,11 @@
     "preset": "react-native"
   },
   "dependencies": {
+    "@mapbox/react-native-mapbox-gl": "git+https://github.com/mapbox/react-native-mapbox-gl#release/6.1.2",
+    "axios": "^0.18.0",
     "react": "16.3.1",
     "react-native": "~0.55.2",
+    "react-native-local-storage": "^1.5.2",
     "react-native-navigation": "^1.1.471",
     "react-native-vector-icons": "^4.6.0",
     "react-redux": "^5.0.7",

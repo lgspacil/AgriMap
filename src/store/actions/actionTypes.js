@@ -2,6 +2,10 @@ export const SET_PLACES = "SET_PLACES";
 export const REMOVE_PLACE = "REMOVE_PLACE";
 export const PLACE_ADDED = "PLACE_ADDED";
 export const START_ADD_PLACE = "START_ADD_PLACE";
+export const ADD_NEW_PLACE = "ADD_NEW_PLACE";
+export const SUBMIT_FARM_AREA = "SUBMIT_FARM_AREA";
+
+export const SET_FARMS = "SET_FARMS";
 
 export const TRY_AUTH = "TRY_AUTH";
 
