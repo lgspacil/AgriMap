@@ -38,41 +38,37 @@ export const testSignIn = (info) => {
   }
 }
 
-export const autoLogin = () => {
-  return async dispatch => {
-    try {
-      // let fetchedEmail = await AsyncStorage.getItem('email');
-      let fetchedEmail = "spacillucas07@gmail.com"
-      let url = "http://10.0.0.31:8080/auto_login";
-      fetch(url, {
-        method: "POST",
-        body: JSON.stringify({
-          email: fetchedEmail
-        }),
-        headers: {
-          "Content-Type": "application/json"
+export const autoLogin = (email) => {
+  return dispatch => {
+    let url = "http://10.0.0.31:8080/auto_login";
+    fetch(url, {
+      method: "POST",
+      body: JSON.stringify({
+        email: email
+      }),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+      .catch((err) => {
+        console.log('the error is: ', err)
+      })
+      .then(res => res.json())
+      .then((res) => {
+        console.log('the response is: ', res);
+        if (res === true) {
+          // if auto login is true then load all the farms for the app
+          dispatch(getFarms());
+          startMainTabs();
         }
       })
-        .catch((err) => {
-          console.log('the error is: ', err)
-        })
-        .then(res => res.json())
-        .then((res) => {
-          console.log('the response is: ', res);
-          if (res === true) {
-            dispatch(getFarms());
-            startMainTabs();
-          }
-        })
-    } catch (err) {
-    console.log('error', err)
+
+
   }
 
-}
-
-// ----------------------------------------------------------------
-// ----------------------------------------------------------------
-// ----------------------------------------------------------------
+  // ----------------------------------------------------------------
+  // ----------------------------------------------------------------
+  // ----------------------------------------------------------------
 
 
 }

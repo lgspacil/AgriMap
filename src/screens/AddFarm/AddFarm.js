@@ -22,37 +22,48 @@ import { lineString as makeLineString, lineString } from "@turf/helpers";
 import MainText from "../../components/UI/MainText/MainText";
 import HeadingText from "../../components/UI/HeadingText/HeadingText";
 import { submitFarmArea } from "../../store/actions/index";
-import { getFarms } from "../../store/actions/index";
 import validate from "../../utility/validation";
 import PlaceInput from "../../components/PlaceInput/PlaceInput";
 import DescriptionInput from "../../components/DescriptionInput/DescriptionInput";
+import { AsyncStorage } from "react-native"
 
 MapboxGL.setAccessToken('pk.eyJ1Ijoic3BhY2lsbHVjYXMiLCJhIjoiY2pra2xhaHgyMXJtZjNxcDliZW01ZHhkZyJ9.rp87COSDjcs097pfP4iFNw');
 
 class AddFarm extends Component {
-    state = {
-        name: "",
-        points: [],
-        connected: true,
-        controls: {
-            placeName: {
-                value: "",
-                valid: false,
-                touched: false,
-                validationRules: {
-                    notEmpty: true
-                }
-            },
-            description: {
-                value: "",
-                valid: false,
-                touched: false,
-                validationRules: {
-                    notEmpty: true
+
+    constructor(props) {
+        super(props)
+    }
+
+    componentWillMount() {
+        this.reset();
+    }
+
+    reset = () => {
+        this.setState({
+            name: "",
+            points: [],
+            connected: true,
+            controls: {
+                placeName: {
+                    value: "",
+                    valid: false,
+                    touched: false,
+                    validationRules: {
+                        notEmpty: true
+                    }
+                },
+                description: {
+                    value: "",
+                    valid: false,
+                    touched: false,
+                    validationRules: {
+                        notEmpty: true
+                    }
                 }
             }
-        }
-    };
+        })
+    }
 
     onPress = (e, c) => {
         this.setState({ points: [...this.state.points, e.geometry.coordinates] });
@@ -72,11 +83,6 @@ class AddFarm extends Component {
                 (x, index) => index !== i
             )
         })
-    }
-
-    submit = () => {
-        console.log('submit with info of: ', this.state.name, this.state.points);
-        this.props.onSubmitFarmArea({ name: this.state.name, coordinates: this.state.points })
     }
 
     updateInputState = (text) => {
@@ -118,20 +124,19 @@ class AddFarm extends Component {
     };
 
     placeAddedHandler = () => {
-        this.props.onSubmitFarmArea({ 
-            name: this.state.controls.placeName.value, 
+        this.props.onSubmitFarmArea({
+            name: this.state.controls.placeName.value,
             coordinates: this.state.points,
-            description: this.state.controls.description.value 
-        })
-
-        // this.props.navigator.switchToTab({tabIndex: 0});
+            description: this.state.controls.description.value
+        });
+        this.reset();
+        this.props.navigator.switchToTab({ tabIndex: 2 });
     };
 
     render() {
         let pointsOnMap = null;
         if (this.state.points.length > 0) {
             pointsOnMap = this.state.points.map((point, i) => (
-                // console.log(point.geometry.coordinates)
                 <MapboxGL.PointAnnotation
                     key={String(point[0] + point[1])}
                     id={String(point[0] + point[1])}
@@ -183,7 +188,6 @@ class AddFarm extends Component {
                         <HeadingText>Map out an area</HeadingText>
                     </MainText>
 
-                    {/* <TextInput style={{width: '100%'}}placeholder="Enter Name" onChangeText={val => this.updateInputState(val)}></TextInput> */}
                     <View style={styles.mapContainer}>
                         <MapboxGL.MapView
                             onPress={this.onPress}
@@ -207,8 +211,6 @@ class AddFarm extends Component {
                     />
 
                     <View>
-                        {/* <Button title="Toggle Area Mapped" onPress={this.toggleFill}/> */}
-
                         <View style={styles.button}>
                             <Button
                                 title="Share the Place!"
@@ -322,9 +324,6 @@ const styles = StyleSheet.create({
 const mapDispatchToProps = dispatch => {
     return {
         onSubmitFarmArea: (info) => dispatch(submitFarmArea(info)),
-        onLoadPlaces: () => dispatch(getFarms())
-        // onTryAuth: (authData, authMode) => dispatch(tryAuth(authData, authMode)),
-        // onAutoSignIn: () => dispatch(authAutoSignIn())
     };
 };
 

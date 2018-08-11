@@ -42,7 +42,6 @@ class FarmDetail extends Component {
             pair.push(parseFloat(point.split(',')[1]))
             intCoords.push(pair);
         })
-        console.log(intCoords)
 
         this.setState({
             intCoords: intCoords

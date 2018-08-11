@@ -1,23 +1,23 @@
 [
     {
-        "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_cab_background_internal_bg.xml"
-    },
-    {
         "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
         "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/design_bottom_navigation_item_background.xml",
         "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/drawable/design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_btn_borderless_material.xml"
-    },
-    {
         "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/mapbox_info_bg_selector.xml",
         "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/5.4.1/res/drawable/mapbox_info_bg_selector.xml"
+    },
+    {
+        "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_btn_borderless_material.xml"
     },
     {
         "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
@@ -32,12 +32,12 @@
         "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-plugin-locationlayer/0.3.0/res/drawable/mapbox_user_icon.xml"
     },
     {
-        "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
-        "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/27.0.2/res/drawable/notification_bg.xml"
-    },
-    {
         "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
         "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/27.0.2/res/drawable/notification_bg.xml"
     },
     {
         "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
@@ -52,12 +52,12 @@
         "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/drawable/design_password_eye.xml"
     },
     {
-        "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
-        "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_dialog_material_background.xml"
-    },
-    {
         "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
         "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
+        "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_dialog_material_background.xml"
     },
     {
         "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
@@ -70,10 +70,6 @@
     {
         "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/mapbox_user_puck_icon.xml",
         "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-plugin-locationlayer/0.3.0/res/drawable/mapbox_user_puck_icon.xml"
-    },
-    {
-        "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
-        "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable/abc_ratingbar_full_material.xml"
     },
     {
         "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
@@ -156,10 +152,6 @@
         "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_ic_voice_search_api_material.xml"
     },
     {
-        "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
-        "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable/abc_dialog_material_background_light.xml"
-    },
-    {
         "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
         "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_ratingbar_indicator_material.xml"
     },
@@ -168,20 +160,16 @@
         "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
-        "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable/abc_dialog_material_background_dark.xml"
-    },
-    {
         "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/notification_background.xml",
         "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.aurelhubert/ahbottomnavigation/2.0.6/res/drawable/notification_background.xml"
     },
     {
-        "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
         "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/tooltip_frame_light.xml",
         "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/tooltip_frame_light.xml"
+    },
+    {
+        "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/mapbox_user_bearing_icon.xml",
@@ -204,12 +192,12 @@
         "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_ratingbar_material.xml"
     },
     {
-        "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
-        "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_btn_radio_material.xml"
-    },
-    {
         "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
         "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_btn_radio_material.xml"
     },
     {
         "merged": "/Users/lucasspacil/Desktop/AgriMap/android/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",

@@ -7,6 +7,7 @@ import FindFarmScreen from "./src/screens/FindFarms/FindFarm";
 import AddFarmScreen from "./src/screens/AddFarm/AddFarm";
 import HeatMapScreen from "./src/screens/HeatMap/HeatMap";
 import FarmDetailScreen from "./src/screens/FarmDetail/FarmDetail";
+import SideDrawer from "./src/screens/SideDrawer/SideDrawer";
 
 const store = configureStore();
 
@@ -16,6 +17,7 @@ Navigation.registerComponent("agri-mapp.AddFarmScreen", () => AddFarmScreen, sto
 Navigation.registerComponent("agri-mapp.FindFarmScreen", () => FindFarmScreen, store, Provider);
 Navigation.registerComponent("agri-mapp.HeatMapScreen", () => HeatMapScreen, store, Provider);
 Navigation.registerComponent("agri-mapp.FarmDetailScreen", () => FarmDetailScreen, store, Provider);
+Navigation.registerComponent("agri-mapp.SideDrawer", () => SideDrawer, store, Provider);
 
 // Start a App
 Navigation.startSingleScreenApp({

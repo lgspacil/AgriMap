@@ -10,12 +10,14 @@ const placeList = props => {
       data={props.farms}
       renderItem={(info) => (
         <ListItem
+          key={info.item._id}
           farmName={info.item.name}
           farmCoords={info.item.coords}
           // calling a function automatically
           onItemPressed={() => props.onItemSelected(info.item._id)}
         />
       )}
+      keyExtractor={(item, index) => index.toString()}
     />
   );
 };

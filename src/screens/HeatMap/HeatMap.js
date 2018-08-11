@@ -1,11 +1,11 @@
 import React from 'react';
 import MapboxGL from '@mapbox/react-native-mapbox-gl';
-import {getFarms} from "../../store/actions/index";
+import { getFarms } from "../../store/actions/index";
 
 import {
-    View,
-    Text,
-    StyleSheet,
+  View,
+  Text,
+  StyleSheet,
 
 } from "react-native";
 import { connect } from "react-redux";
@@ -16,85 +16,128 @@ const LONGITUDE = -77.12911152370515;
 MapboxGL.setAccessToken('pk.eyJ1Ijoic3BhY2lsbHVjYXMiLCJhIjoiY2pra2xhaHgyMXJtZjNxcDliZW01ZHhkZyJ9.rp87COSDjcs097pfP4iFNw');
 
 class HeatMap extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            farms: null
+
+  state = {
+    farms: null
+  }
+
+  constructor(props) {
+    super(props);
+    this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
+  }
+
+  onNavigatorEvent = event => {
+    // console.log('the event is: ', event)
+    if (event.type === "ScreenChangedEvent") {
+      if (event.id === "willAppear") {
+        // re create the farms when the user comes to the page
+        this.createFarmPoints();
+      }
+    }
+    if (event.type === "NavBarButtonPress") {
+      if (event.id === "sideDrawerToggle") {
+        this.props.navigator.toggleDrawer({
+          side: "left"
+        });
+      }
+    }
+  }
+
+  createFarmPoints = () => {
+    // converting the strings into ints to use on the map
+    let features = [];
+
+    this.props.farms.map((point) => {
+
+      let layOut = {
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+          "type": "Point",
+          "coordinates": []
         }
       }
 
-    componentDidMount(){
-      // loading the farms when component mounts
-      console.log('$$$', this.props.farms);
+      let first_point = point.coords[0]
+      let two_points = first_point.split(',');
 
-      this.createFarmPoints();
-    }
+      layOut.geometry.coordinates.push(parseFloat(two_points[0]));
+      layOut.geometry.coordinates.push(parseFloat(two_points[1]));
 
-    createFarmPoints = () => {
-      // converting the strings into ints to use on the map
-      let features = [];
+      features.push(layOut);
+    })
+    this.setState({
+      farms: {
+        "type": "FeatureCollection",
+        "features": features
+      }
+    })
 
-      this.props.farms.map((point) => {
-
-        let layOut = {
-          "type": "Feature",
-          "properties": {},
-          "geometry": {
-            "type": "Point",
-            "coordinates": []
-          }
-        }
-
-        let first_point = point.coords[0]
-        let two_points = first_point.split(',');
-
-        console.log(two_points);
-
-        layOut.geometry.coordinates.push(parseFloat(two_points[0]));
-        layOut.geometry.coordinates.push(parseFloat(two_points[1]));
-
-        features.push(layOut);
-      })
-      this.setState({
-        farms: {
-          "type": "FeatureCollection",
-          "features": features
-        }
-      })
-
-    }
+  }
 
   render() {
+    let data;
+    if (this.props.loadEarthquakes) {
+      data = (
+        <MapboxGL.ShapeSource
+          id="earthquakes"
+          cluster
+          clusterRadius={50}
+          // will keep items clustered when you zoom into at least a 14 
+          clusterMaxZoom={14}
+          // shape={this.state.farms}
+          url="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
+        >
+
+          <MapboxGL.CircleLayer
+            id="clusteredPoints"
+            belowLayerID="pointCount"
+            filter={['has', 'point_count']}
+            style={layerStyles.clusteredPoints}
+          />
+
+          <MapboxGL.CircleLayer
+            id="singlePoint"
+            filter={['!has', 'point_count']}
+            style={layerStyles.singlePoint}
+          />
+        </MapboxGL.ShapeSource>
+      )
+    } else if (this.props.loadFarms) {
+      data = (
+      <MapboxGL.ShapeSource
+        id="earthquakes"
+        cluster
+        clusterRadius={50}
+        // will keep items clustered when you zoom into at least a 14 
+        clusterMaxZoom={14}
+        shape={this.state.farms}
+        // url="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
+      >
+
+        <MapboxGL.CircleLayer
+          id="clusteredPoints"
+          belowLayerID="pointCount"
+          filter={['has', 'point_count']}
+          style={layerStyles.clusteredPoints}
+        />
+
+        <MapboxGL.CircleLayer
+          id="singlePoint"
+          filter={['!has', 'point_count']}
+          style={layerStyles.singlePoint}
+        />
+      </MapboxGL.ShapeSource>
+      )
+    }
     return (
-      <View style={{flex: 1}}>
+      <View style={{ flex: 1 }}>
         <MapboxGL.MapView
           zoomLevel={7}
           centerCoordinate={[LONGITUDE, LATITUDE]}
-          style={{flex: 1}}
+          style={{ flex: 1 }}
           styleURL={MapboxGL.StyleURL.Dark}>
-          <MapboxGL.ShapeSource
-            id="earthquakes"
-            cluster
-            clusterRadius={50}
-            // will keep items clustered when you zoom into at least a 14 
-            clusterMaxZoom={14}
-            // shape={this.state.farms}
-            url="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
-            >
-
-            <MapboxGL.CircleLayer
-              id="clusteredPoints"
-              belowLayerID="pointCount"
-              filter={['has', 'point_count']}
-              style={layerStyles.clusteredPoints}
-            />
-
-            <MapboxGL.CircleLayer
-              id="singlePoint"
-              filter={['!has', 'point_count']}
-              style={layerStyles.singlePoint}
-            />
-          </MapboxGL.ShapeSource>
+          {data}
         </MapboxGL.MapView>
       </View>
     );
@@ -114,7 +157,7 @@ const layerStyles = MapboxGL.StyleSheet.create({
   clusteredPoints: {
     circlePitchAlignment: 'map',
     circleColor: MapboxGL.StyleSheet.source(
-    //how to read if there are two in a cluster collor orange
+      //how to read if there are two in a cluster collor orange
       [
         [2, 'yellow'],
         [3, 'red'],
@@ -139,7 +182,9 @@ const layerStyles = MapboxGL.StyleSheet.create({
 
 const mapStateToProps = state => {
   return {
-    farms: state.farms.farms
+    farms: state.farms.farms,
+    loadEarthquakes: state.ui.loadEarthQuakes,
+    loadFarms: state.ui.loadFarms
   };
 };
 

@@ -16,12 +16,9 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case REMOVE_FARM:
-    console.log('deleting farms')
       return {
         ...state,
         farms: state.farms.filter(farm => {
-          console.log('the farm is: ', farm._id)
-          console.log('the action is: ', action.id)
           return farm._id != action.id;
         })
       }

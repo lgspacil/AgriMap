@@ -11,4 +11,6 @@ export {
   deleteFarm
 } from "./farms";
 export { tryAuth, authGetToken, authAutoSignIn, authLogout, testSignIn, autoLogin } from "./auth";
-export { uiStartLoading, uiStopLoading } from "./ui";
+export { uiStartLoading, uiStopLoading, loadEarthQuakes, loadFarms } from "./ui";
+
+

@@ -9,7 +9,7 @@ import {
   REMOVE_FARM
 } from "./actionTypes";
 import { uiStartLoading, uiStopLoading, authGetToken } from "./index";
-import axios from "axios";
+
 
 export const submitFarmArea = (info) => {
   console.log('in the submit farm area: ', info)
@@ -31,11 +31,12 @@ export const submitFarmArea = (info) => {
       })
       .then(res => res.json())
       .then((res) => {
-        console.log('the response is: ', res);
+        console.log('just added a farm: ', res);
       })
   }
 }
 
+// fetches all the farms from the database
 export const getFarms = () => {
   console.log('fetching all farms')
   return dispatch => {
@@ -49,6 +50,7 @@ export const getFarms = () => {
         var new_data = JSON.stringify(res)
         console.log('all the farms are: ', JSON.parse(new_data))
 
+        // when all the farms are fetched set the state to them
         dispatch(setFarms(JSON.parse(new_data)));
       })
   }
@@ -81,7 +83,6 @@ export const deleteFarm = id => {
 }
 
 export const removeFarm = id => {
-  console.log('removing the farm')
   return {
     type: REMOVE_FARM,
     id: id
@@ -90,7 +91,6 @@ export const removeFarm = id => {
 
 
 export const setFarms = farms => {
-  console.log('*************')
   return {
     type: SET_FARMS,
     farms: farms

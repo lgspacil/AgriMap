@@ -25,13 +25,6 @@ const startTabs = () => {
                                 title: "Menu",
                                 id: "sideDrawerToggle"
                             }
-                        ],
-                        rightButtons: [
-                            {
-                                icon: sources[3],
-                                title: "Card View",
-                                id: "rightButtonCardView"
-                            }
                         ]
                     }
                 },
@@ -66,8 +59,8 @@ const startTabs = () => {
                         rightButtons: [
                             {
                                 icon: sources[3],
-                                title: "Card View",
-                                id: "rightButtonCardView"
+                                title: "Play Music",
+                                id: "rightButtonMusicPlayer"
                             }
                         ]
                     }
@@ -78,9 +71,10 @@ const startTabs = () => {
             },
             drawer: {
                 left: {
-                    // screen: "awesome-places.SideDrawer"
+                    screen: "agri-mapp.SideDrawer"
                 }
             },
+            // the color of the tabs
             appStyle: {
                 tabBarSelectedButtonColor: "orange"
             },

@@ -12,38 +12,48 @@ import {
     Keyboard,
     TouchableWithoutFeedback,
     ActivityIndicator
-  } from "react-native";
+} from "react-native";
 import { connect } from "react-redux";
 import { AsyncStorage } from "react-native";
 import { testSignIn, autoLogin } from "../../store/actions/index";
 
-  class Auth extends Component {
-      state = {
-          loginInfo: {
+class Auth extends Component {
+    state = {
+        loginInfo: {
             name: "",
             email: "",
             password: ""
-          }
-      };
+        }
+    };
 
-      componentDidMount(){
-        console.log('auto loading attempt');
-        this.props.onAutoLogin()
-      }
+    componentDidMount() {
+        this.getEmailFromStorage();
+    }
 
+    getEmailFromStorage = async () => {
+        try {
+            const email = await AsyncStorage.getItem('email');
+            if (email !== null) {
+                // We have data!!
+                console.log(email);
+                this.props.onAutoLogin(email)
+            }
+        } catch (error) {
+            // Error retrieving data
+        }
+    }
 
-
-      updateInputState = (key, val) => {
-          if(key == "password"){
-              this.setState(prevState => {
+    updateInputState = (key, val) => {
+        if (key == "password") {
+            this.setState(prevState => {
                 return {
                     loginInfo: {
                         ...prevState.loginInfo,
                         password: val
                     }
                 }
-              })
-          } else if(key == "email"){
+            })
+        } else if (key == "email") {
             this.setState(prevState => {
                 return {
                     loginInfo: {
@@ -51,8 +61,8 @@ import { testSignIn, autoLogin } from "../../store/actions/index";
                         email: val
                     }
                 }
-              })
-          } else if(key == "name"){
+            })
+        } else if (key == "name") {
             this.setState(prevState => {
                 return {
                     loginInfo: {
@@ -60,52 +70,50 @@ import { testSignIn, autoLogin } from "../../store/actions/index";
                         name: val
                     }
                 }
-              })
-          };
-      };
+            })
+        };
+    };
 
-      loginHandler = () => {
-        
-        console.log('you clicked the login handler', this.state.loginInfo);
+    loginHandler = () => {
         this.props.onTestSignIn(this.state.loginInfo);
-        
+
         // startMainTabs();
-      }
+    }
 
-      render(){
-          return(
-              <View style={styles.container}>
-                  <TextInput placeholder="Enter Name" onChangeText={val => this.updateInputState("name", val)}></TextInput>
-                  <TextInput placeholder="Enter Email" onChangeText={val => this.updateInputState("email", val)}></TextInput>
-                  <TextInput placeholder="Enter Password" onChangeText={val => this.updateInputState("password", val)}></TextInput>
-                  <Button title="Submit" onPress={this.loginHandler}></Button>
-              </View>
-          )
-      }
-  }
+    render() {
+        return (
+            <View style={styles.container}>
+                <TextInput placeholder="Enter Name" onChangeText={val => this.updateInputState("name", val)}></TextInput>
+                <TextInput placeholder="Enter Email" onChangeText={val => this.updateInputState("email", val)}></TextInput>
+                <TextInput placeholder="Enter Password" onChangeText={val => this.updateInputState("password", val)}></TextInput>
+                <Button title="Submit" onPress={this.loginHandler}></Button>
+            </View>
+        )
+    }
+}
 
-  const styles = StyleSheet.create({
-      container: {
+const styles = StyleSheet.create({
+    container: {
         flex: 1,
         flexDirection: "column"
-      },
-      map: {
-          height: '90%',
-          width: '90%',
-          backgroundColor: 'green'
-      },
-      mapContainer: {
-          flex: 2,
-          backgroundColor: 'blue',
-          alignItems: 'center',
-          justifyContent: 'center'
+    },
+    map: {
+        height: '90%',
+        width: '90%',
+        backgroundColor: 'green'
+    },
+    mapContainer: {
+        flex: 2,
+        backgroundColor: 'blue',
+        alignItems: 'center',
+        justifyContent: 'center'
 
-      },
-      secondBox: {
-          flex: 1,
-          backgroundColor: 'red'
-      }
-  })
+    },
+    secondBox: {
+        flex: 1,
+        backgroundColor: 'red'
+    }
+})
 
 const mapStateToProps = state => {
     return {
@@ -116,10 +124,10 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         onTestSignIn: (info) => dispatch(testSignIn(info)),
-        onAutoLogin: () => dispatch(autoLogin())
+        onAutoLogin: (email) => dispatch(autoLogin(email))
         // onTryAuth: (authData, authMode) => dispatch(tryAuth(authData, authMode)),
         // onAutoSignIn: () => dispatch(authAutoSignIn())
     };
 };
-  
+
 export default connect(mapStateToProps, mapDispatchToProps)(Auth);
