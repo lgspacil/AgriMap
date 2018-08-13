@@ -1,9 +1,11 @@
-import { UI_START_LOADING, UI_STOP_LOADING, LOAD_FARMS, LOAD_EARTHQUAKES } from "../actions/actionTypes";
+import { LOAD_FARMS, LOAD_EARTHQUAKES, FIND_FARM_SCREEN, ADD_FARM_SCREEN, HEAT_MAP_SCREEN } from "../actions/actionTypes";
 
 const initialState = {
-  isLoading: false,
   loadEarthQuakes: false,
-  loadFarms: true
+  loadFarms: true,
+  findFarmScreen: false,
+  addFarmScreen: false,
+  heatMapScreen: false
 };
 
 const reducer = (state = initialState, action) => {
@@ -20,16 +22,29 @@ const reducer = (state = initialState, action) => {
         loadEarthQuakes: false,
         loadFarms: true
       }
-    case UI_START_LOADING:
+    case FIND_FARM_SCREEN: 
       return {
         ...state,
-        isLoading: true
-      };
-    case UI_STOP_LOADING:
+        findFarmScreen: true,
+        addFarmScreen: false,
+        heatMapScreen: false
+      }
+    case ADD_FARM_SCREEN: 
       return {
         ...state,
-        isLoading: false
-      };
+        findFarmScreen: false,
+        addFarmScreen: true,
+        heatMapScreen: false
+      }
+    case HEAT_MAP_SCREEN:
+      return {
+        ...state,
+        findFarmScreen: false,
+        addFarmScreen: false,
+        heatMapScreen: true
+      }
+
+
     default:
       return state;
   }

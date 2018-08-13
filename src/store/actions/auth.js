@@ -1,16 +1,12 @@
 import { AsyncStorage } from "react-native";
-var storage = require('react-native-local-storage');
-import { TRY_AUTH, AUTH_SET_TOKEN, AUTH_REMOVE_TOKEN } from "./actionTypes";
-import { uiStartLoading, uiStopLoading, getFarms } from "./index";
+import {  getFarms } from "./index";
 import startMainTabs from "../../screens/MainTabs/startMainTabs";
-import App from "../../../App";
 
-const API_KEY = "AIzaSyBDgdcyCHrbsEyS5p0rM1hYVe656e1g8y4";
-
+// User is logging in, the info is the name, email and password
 export const testSignIn = (info) => {
   return dispatch => {
-    console.log('made it to the actions test sign in with ', info);
-    let url = "http://10.0.0.31:8080/login";
+    //pass this info to my DataBase
+    let url = "https://secure-retreat-74173.herokuapp.com/login";
     fetch(url, {
       method: "POST",
       body: JSON.stringify({
@@ -27,11 +23,13 @@ export const testSignIn = (info) => {
       })
       .then(res => res.json())
       .then((res) => {
-        console.log('the response is: ', res);
+        // If the Database sends back true I know that it is okay to save the email address
         if (res === true) {
           //save to asyncStorage
           AsyncStorage.setItem('email', info.email);
+          // Now call the action to get all farms to load
           dispatch(getFarms())
+          // call this function to start all the main tabs
           startMainTabs();
         }
       })
@@ -39,8 +37,9 @@ export const testSignIn = (info) => {
 }
 
 export const autoLogin = (email) => {
+  console.log('trying auto login')
   return dispatch => {
-    let url = "http://10.0.0.31:8080/auto_login";
+    let url = "https://secure-retreat-74173.herokuapp.com/auto_login";
     fetch(url, {
       method: "POST",
       body: JSON.stringify({
@@ -62,13 +61,5 @@ export const autoLogin = (email) => {
           startMainTabs();
         }
       })
-
-
   }
-
-  // ----------------------------------------------------------------
-  // ----------------------------------------------------------------
-  // ----------------------------------------------------------------
-
-
 }

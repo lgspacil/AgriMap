@@ -1,16 +1,4 @@
-import { UI_START_LOADING, UI_STOP_LOADING, LOAD_EARTHQUAKES, LOAD_FARMS } from './actionTypes';
-
-export const uiStartLoading = () => {
-    return {
-        type: UI_START_LOADING
-    };
-};
-
-export const uiStopLoading = () => {
-    return {
-        type: UI_STOP_LOADING
-    };
-};
+import {  LOAD_EARTHQUAKES, LOAD_FARMS, ADD_FARM_SCREEN, FIND_FARM_SCREEN, HEAT_MAP_SCREEN } from './actionTypes';
 
 export const loadEarthQuakes = () => {
     return {
@@ -21,5 +9,23 @@ export const loadEarthQuakes = () => {
 export const loadFarms = () => {
     return {
         type: LOAD_FARMS
+    };
+};
+
+export const addFarmScreen = () => {
+    return {
+        type: ADD_FARM_SCREEN
+    }
+}
+
+export const findFarmScreen = () => {
+    return {
+        type: FIND_FARM_SCREEN
+    };
+};
+
+export const heatMapScreen = () => {
+    return {
+        type: HEAT_MAP_SCREEN
     };
 };

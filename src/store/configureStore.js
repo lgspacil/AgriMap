@@ -3,13 +3,10 @@ import thunk from "redux-thunk";
 
 import farmsReducer from "./reducers/farms";
 import uiReducer from "./reducers/ui";
-import authReducer from "./reducers/auth";
-// import userReducer from "./reducers/user";
 
 const rootReducer = combineReducers({
   farms: farmsReducer,
   ui: uiReducer,
-  auth: authReducer
 });
 
 let composeEnhancers = compose;

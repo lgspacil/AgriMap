@@ -1,49 +1,66 @@
 import React, { Component } from "react";
 import {
-    Platform,
     StyleSheet,
-    Text,
     View,
-    Dimensions,
-    TouchableOpacity,
     Button,
     ScrollView,
-    TextInput
 } from "react-native";
 import { connect } from "react-redux";
-const { width, height } = Dimensions.get("window");
-const ASPECT_RATIO = width / height;
-const LATITUDE = 38.79930767201779;
-const LONGITUDE = -77.12911152370515;
-const LATITUDE_DELTA = 0.0922;
-const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 import MapboxGL from "@mapbox/react-native-mapbox-gl";
-import { lineString as makeLineString, lineString } from "@turf/helpers";
-import MainText from "../../components/UI/MainText/MainText";
+import { lineString as lineString } from "@turf/helpers";
 import HeadingText from "../../components/UI/HeadingText/HeadingText";
-import { submitFarmArea } from "../../store/actions/index";
+import { submitFarmArea, addFarmScreen } from "../../store/actions/index";
 import validate from "../../utility/validation";
 import PlaceInput from "../../components/PlaceInput/PlaceInput";
 import DescriptionInput from "../../components/DescriptionInput/DescriptionInput";
-import { AsyncStorage } from "react-native"
 
 MapboxGL.setAccessToken('pk.eyJ1Ijoic3BhY2lsbHVjYXMiLCJhIjoiY2pra2xhaHgyMXJtZjNxcDliZW01ZHhkZyJ9.rp87COSDjcs097pfP4iFNw');
 
 class AddFarm extends Component {
 
+    static navigatorStyle = {
+        navBarButtonColor: "green"
+    };
+
     constructor(props) {
-        super(props)
+        super(props);
+        // allows the user to listen to navigaor events
+        this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
     }
 
+    onNavigatorEvent = event => {
+        // checking navigaor events
+        if (event.type === "ScreenChangedEvent") {
+            if (event.id === "willAppear") {
+                this.props.onAddFarmScreen();
+            }
+        }
+
+        // if the side bar button is pressed toggle the side drawer
+        if (event.type === "NavBarButtonPress") {
+            if (event.id === "sideDrawerToggle") {
+                this.props.navigator.toggleDrawer({
+                    side: "left"
+                });
+            }
+        }
+    }
+
+    // when component mounts you set the state
+    // aloows for a way to remove the filled in items with reset()
     componentWillMount() {
         this.reset();
+
+        //setting the location
+        this.getLocationHandler('willMount')
     }
+
 
     reset = () => {
         this.setState({
-            name: "",
             points: [],
-            connected: true,
+            latitude: 47.606,  // fall back case is seattle
+            longitude: -122.3321, // fall back case is seattle
             controls: {
                 placeName: {
                     value: "",
@@ -65,16 +82,44 @@ class AddFarm extends Component {
         })
     }
 
+    getLocationHandler = (id) => {
+        // will run when the component mounts as to center on your location
+        if (id === "willMount") {
+            navigator.geolocation.getCurrentPosition(pos => {
+                console.log('pos -->', pos.coords)
+                this.setState({
+                    latitude: pos.coords.latitude,
+                    longitude: pos.coords.longitude
+                })
+            },
+                err => {
+                    console.log(err);
+                    alert("Fetching the Position failed, will default to Seattle");
+                })
+        } else if (id === "setLocation") {
+            // if I set locate me from the button click set a point on the map
+            let coordinates;
+            navigator.geolocation.getCurrentPosition(pos => {
+                // fly to your location
+                this._map.flyTo([pos.coords.longitude, pos.coords.latitude], 2500);
+                coordinates = [pos.coords.longitude, pos.coords.latitude]
+                this.setState({ points: [...this.state.points, coordinates] });
+            },
+                err => {
+                    console.log(err);
+                    alert("Fetching the Position failed, please pick one manually!");
+                })
+        }
+
+    }
+
+    // function that handles the maps on press
+    // writes out the previous states as well as the new coords
     onPress = (e, c) => {
         this.setState({ points: [...this.state.points, e.geometry.coordinates] });
     };
 
-    toggleFill = () => {
-        this.setState({
-            connected: this.state.connected ? false : true
-        })
-    }
-
+    // removing one of the index
     deletePoint = (i) => {
         // removing the index from the array clicked
         this.setState({
@@ -85,12 +130,7 @@ class AddFarm extends Component {
         })
     }
 
-    updateInputState = (text) => {
-        this.setState({
-            name: text
-        })
-    }
-
+    // a validator and check to see if the name field was inputed and checked by the validator
     placeNameChangedHandler = val => {
         this.setState(prevState => {
             return {
@@ -107,6 +147,7 @@ class AddFarm extends Component {
         });
     };
 
+    // a validator and check to see if the description field was inputed and checked by the validator
     descriptionChangedHandler = val => {
         this.setState(prevState => {
             return {
@@ -123,17 +164,23 @@ class AddFarm extends Component {
         });
     };
 
+    // called when we want to submit the data to database and action
     placeAddedHandler = () => {
+        // calling an action
         this.props.onSubmitFarmArea({
             name: this.state.controls.placeName.value,
             coordinates: this.state.points,
             description: this.state.controls.description.value
         });
+        // resetting the values when submitting
         this.reset();
+        // routing to the second index to see the new farm that was added
         this.props.navigator.switchToTab({ tabIndex: 2 });
     };
 
     render() {
+        // points on the map are the coordinates stored in this.state.points
+        // will render them on the map if there is more than one
         let pointsOnMap = null;
         if (this.state.points.length > 0) {
             pointsOnMap = this.state.points.map((point, i) => (
@@ -144,7 +191,7 @@ class AddFarm extends Component {
                     coordinate={point}
                 >
                     <View style={styles.annotationContainer}>
-                        <View style={[styles.annotationFill]} />
+                        <View style={styles.annotationFill} />
                     </View>
                     <MapboxGL.Callout title="Look an anotation">
                         <View style={styles.calloutContainer}>
@@ -161,16 +208,7 @@ class AddFarm extends Component {
         }
 
         let linesOnMap = null;
-        if (this.state.points.length > 1 && !this.state.connected) {
-            linesOnMap = (
-                <MapboxGL.ShapeSource
-                    id="routeSource"
-                    shape={lineString(this.state.points)}
-                >
-                    <MapboxGL.LineLayer id="routeFill" style={layerStyles.route} />
-                </MapboxGL.ShapeSource>
-            );
-        } else if (this.state.connected && this.state.points.length > 1) {
+        if (this.state.points.length > 1) {
             linesOnMap = (
                 <MapboxGL.ShapeSource
                     id="routeSource"
@@ -184,19 +222,23 @@ class AddFarm extends Component {
         return (
             <ScrollView>
                 <View style={styles.mainContainer}>
-                    <MainText>
-                        <HeadingText>Map out an area</HeadingText>
-                    </MainText>
+
+                    <HeadingText>Map out an area</HeadingText>
 
                     <View style={styles.mapContainer}>
                         <MapboxGL.MapView
+                            ref={(c) => this._map = c}
                             onPress={this.onPress}
                             style={styles.map}
-                            centerCoordinate={[LONGITUDE, LATITUDE]}
+                            centerCoordinate={[this.state.longitude, this.state.latitude]}
                         >
                             {pointsOnMap}
                             {linesOnMap}
                         </MapboxGL.MapView>
+                    </View>
+
+                    <View style={styles.button}>
+                        <Button title="Locate Me" onPress={() => this.getLocationHandler('setLocation')} />
                     </View>
 
                     <PlaceInput
@@ -210,19 +252,20 @@ class AddFarm extends Component {
                         descriptionData={this.state.controls.description}
                     />
 
-                    <View>
-                        <View style={styles.button}>
-                            <Button
-                                title="Share the Place!"
-                                onPress={this.placeAddedHandler}
-                                color="orange"
-                                disabled={
-                                    !this.state.controls.placeName.valid ||
-                                    !this.state.controls.description.valid
-                                }
-                            />
-                        </View>
+
+                    <View style={styles.button}>
+                        <Button
+                            title="Share the Place!"
+                            onPress={this.placeAddedHandler}
+                            color="orange"
+                            disabled={
+                                !this.state.controls.placeName.valid ||
+                                !this.state.controls.description.valid ||
+                                this.state.points.length < 3
+                            }
+                        />
                     </View>
+
                 </View>
             </ScrollView>
         );
@@ -230,44 +273,37 @@ class AddFarm extends Component {
 }
 
 const layerStyles = MapboxGL.StyleSheet.create({
-    route: {
-        lineColor: "red",
-        lineWidth: 3,
-        lineOpacity: 0.84
-    },
     fillLayer: {
         fillAntialias: true,
         fillColor: 'green',
         fillOpacity: 0.5,
-        fillOutlineColor: 'rgba(255, 255, 255, 0.84)'
     }
 });
 
 const ANNOTATION_SIZE = 20;
 
 const styles = StyleSheet.create({
-    button: {
-        margin: 30,
-        color: 'red'
-    },
     mainContainer: {
         flex: 1,
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor: "#8c8d9f"
     },
     mapContainer: {
         width: '100%',
         alignItems: 'center',
     },
     map: {
-        width: "100%",
-        height: 250
+        width: "90%",
+        height: 400,
+        borderWidth: 4,
+        borderColor: "#ffcf5a"
     },
     annotationContainer: {
         width: ANNOTATION_SIZE,
         height: ANNOTATION_SIZE,
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "white",
+        backgroundColor: "black",
         borderRadius: ANNOTATION_SIZE / 2,
         borderWidth: StyleSheet.hairlineWidth,
         borderColor: "rgba(0, 0, 0, 0.45)"
@@ -276,17 +312,15 @@ const styles = StyleSheet.create({
         width: ANNOTATION_SIZE - 3,
         height: ANNOTATION_SIZE - 3,
         borderRadius: (ANNOTATION_SIZE - 3) / 2,
-        backgroundColor: "orange",
+        backgroundColor: "#ffcf5a",
         transform: [{ scale: 0.6 }]
     },
     calloutContainer: {
         alignItems: "center",
         justifyContent: "center",
-        width: 180,
-        zIndex: 9999999
+        width: 180
     },
     calloutContent: {
-        position: "relative",
         padding: 8,
         flex: 1,
         borderRadius: 3,
@@ -295,35 +329,17 @@ const styles = StyleSheet.create({
         backgroundColor: "white",
         flexDirection: 'row'
     },
-    calloutTip: {
-        zIndex: 1000,
-        marginTop: -2,
-        elevation: 0,
-        backgroundColor: "transparent",
-        borderTopWidth: 16,
-        borderRightWidth: 8,
-        borderBottomWidth: 0,
-        borderLeftWidth: 8,
-        borderTopColor: "white",
-        borderRightColor: "transparent",
-        borderBottomColor: "transparent",
-        borderLeftColor: "transparent"
-    },
     button: {
         margin: 8,
-        width: '100%',
+        width: '90%',
     }
 });
 
-// const mapStateToProps = state => {
-// return {
-//     isLoading: state.ui.isLoading
-// };
-// };
 
 const mapDispatchToProps = dispatch => {
     return {
         onSubmitFarmArea: (info) => dispatch(submitFarmArea(info)),
+        onAddFarmScreen: () => dispatch(addFarmScreen())
     };
 };
 

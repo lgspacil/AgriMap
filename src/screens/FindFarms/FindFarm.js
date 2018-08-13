@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import {
   View,
-  Text,
   StyleSheet,
-  Button
 } from "react-native";
 
 import Mapbox from '@mapbox/react-native-mapbox-gl';
-import { getFarms } from "../../store/actions/index";
+import { getFarms, findFarmScreen } from "../../store/actions/index";
 import { connect } from "react-redux";
 import FarmList from "../../components/FarmList/FarmList";
 
@@ -17,7 +15,7 @@ Mapbox.setAccessToken('pk.eyJ1Ijoic3BhY2lsbHVjYXMiLCJhIjoiY2pra2xhaHgyMXJtZjNxcD
 class FindFarm extends Component {
 
   static navigatorStyle = {
-    navBarButtonColor: "orange"
+    navBarButtonColor: "green"
   };
 
   constructor(props) {
@@ -30,26 +28,18 @@ class FindFarm extends Component {
     if (event.type === "ScreenChangedEvent") {
       if (event.id === "willAppear") {
         this.props.onLoadPlaces();
+        this.props.onFindFarmScreen();
       }
     }
-    // if (event.type === "NavBarButtonPress") {
-    //   if (event.id === "sideDrawerToggle") {
-    //     this.props.navigator.toggleDrawer({
-    //       side: "left"
-    //     });
-    //   } else if (event.id === "rightButtonCardView") {
-    //     if (this.state.viewType === "list") {
-    //       this.setState({
-    //         viewType: "card"
-    //       })
-    //     } else {
-    //       this.setState({
-    //         viewType: "list"
-    //       })
-    //     }
 
-    //   }
-    // }
+    // if the side bar button is pressed toggle the side drawer
+    if (event.type === "NavBarButtonPress") {
+      if (event.id === "sideDrawerToggle") {
+        this.props.navigator.toggleDrawer({
+          side: "left"
+        });
+      }
+    }
   };
 
   itemSelectedHandler = id => {
@@ -92,7 +82,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onLoadPlaces: () => dispatch(getFarms())
+    onLoadPlaces: () => dispatch(getFarms()),
+    onFindFarmScreen: () => dispatch(findFarmScreen())
   };
 };
 

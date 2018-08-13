@@ -51,24 +51,14 @@ const startTabs = () => {
                     navigatorButtons: {
                         leftButtons: [
                             {
-                                icon: sources[5],
+                                icon: sources[2],
                                 title: "Menu",
                                 id: "sideDrawerToggle"
-                            }
-                        ],
-                        rightButtons: [
-                            {
-                                icon: sources[3],
-                                title: "Play Music",
-                                id: "rightButtonMusicPlayer"
                             }
                         ]
                     }
                 },
             ],
-            tabsStyle: {
-                tabBarSelectedButtonColor: "orange"
-            },
             drawer: {
                 left: {
                     screen: "agri-mapp.SideDrawer"
@@ -76,7 +66,7 @@ const startTabs = () => {
             },
             // the color of the tabs
             appStyle: {
-                tabBarSelectedButtonColor: "orange"
+                tabBarSelectedButtonColor: "#88BEA3"
             },
         });
     });

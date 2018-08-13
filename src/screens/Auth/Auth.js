@@ -1,41 +1,59 @@
 import React, { Component } from "react";
-import startMainTabs from '../MainTabs/startMainTabs';
 import {
     View,
-    Text,
     Button,
-    TextInput,
     StyleSheet,
     ImageBackground,
-    Dimensions,
-    KeyboardAvoidingView,
-    Keyboard,
-    TouchableWithoutFeedback,
-    ActivityIndicator
 } from "react-native";
 import { connect } from "react-redux";
 import { AsyncStorage } from "react-native";
 import { testSignIn, autoLogin } from "../../store/actions/index";
+import DefaultInput from "../../components/UI/DefaultInput/DefaultInput";
+import validate from "../../utility/validation";
 
 class Auth extends Component {
+
     state = {
-        loginInfo: {
-            name: "",
-            email: "",
-            password: ""
+        controls: {
+            email: {
+                value: "",
+                valid: false,
+                validationRules: {
+                    isEmail: true
+                },
+                touched: false
+            },
+            name: {
+                value: "",
+                valid: false,
+                validationRules: {
+                    minLength: 3
+                },
+                touched: false
+            },
+            password: {
+                value: "",
+                valid: false,
+                validationRules: {
+                    minLength: 3
+                },
+                touched: false
+            }
         }
     };
 
     componentDidMount() {
+        // calling function when component mounts
         this.getEmailFromStorage();
     }
 
+    // Checking the phone's storage for email info
     getEmailFromStorage = async () => {
         try {
             const email = await AsyncStorage.getItem('email');
             if (email !== null) {
-                // We have data!!
-                console.log(email);
+                // If we have the email call redux action to onAutoLogin
+                // checking if the email is in the DataBase
                 this.props.onAutoLogin(email)
             }
         } catch (error) {
@@ -43,91 +61,112 @@ class Auth extends Component {
         }
     }
 
+    // Function gets called everytime the user inputs something into the input
     updateInputState = (key, val) => {
         if (key == "password") {
             this.setState(prevState => {
                 return {
-                    loginInfo: {
-                        ...prevState.loginInfo,
-                        password: val
+                    controls: {
+                        ...prevState.controls,
+                        password: {
+                            ...prevState.controls.password,
+                            value: val,
+                            valid: validate(val, prevState.controls.password.validationRules),
+                            touched: true
+                        }
                     }
                 }
             })
         } else if (key == "email") {
             this.setState(prevState => {
                 return {
-                    loginInfo: {
-                        ...prevState.loginInfo,
-                        email: val
+                    controls: {
+                        ...prevState.controls,
+                        email: {
+                            ...prevState.controls.email,
+                            value: val,
+                            valid: validate(val, prevState.controls.email.validationRules),
+                            touched: true
+                        }
                     }
                 }
             })
         } else if (key == "name") {
             this.setState(prevState => {
                 return {
-                    loginInfo: {
-                        ...prevState.loginInfo,
-                        name: val
+                    controls: {
+                        ...prevState.controls,
+                        name: {
+                            ...prevState.controls.name,
+                            value: val,
+                            valid: validate(val, prevState.controls.name.validationRules),
+                            touched: true
+                        }
                     }
                 }
             })
         };
     };
 
+    // when the user submits the information we send this info to redux
     loginHandler = () => {
-        this.props.onTestSignIn(this.state.loginInfo);
-
-        // startMainTabs();
+        this.props.onTestSignIn({name: this.state.controls.name.value, password: this.state.controls.password.value, email: this.state.controls.email.value});
     }
 
     render() {
         return (
-            <View style={styles.container}>
-                <TextInput placeholder="Enter Name" onChangeText={val => this.updateInputState("name", val)}></TextInput>
-                <TextInput placeholder="Enter Email" onChangeText={val => this.updateInputState("email", val)}></TextInput>
-                <TextInput placeholder="Enter Password" onChangeText={val => this.updateInputState("password", val)}></TextInput>
-                <Button title="Submit" onPress={this.loginHandler}></Button>
-            </View>
+            <ImageBackground source={require("../../assets/farm.png")} style={styles.backgroundImage} >
+                <View style={styles.container}>
+                    <DefaultInput
+                        placeholder="Enter Name"
+                        onChangeText={val => this.updateInputState("name", val)}
+                        value={this.state.controls.name.value}
+                        valid={this.state.controls.name.valid}
+                    />
+                    <DefaultInput
+                        placeholder="Enter Email"
+                        onChangeText={val => this.updateInputState("email", val)}
+                        keyboardType="email-address"
+                        value={this.state.controls.email.value}
+                        valid={this.state.controls.email.valid}
+                    />
+                    <DefaultInput
+                        placeholder="Enter Password"
+                        onChangeText={val => this.updateInputState("password", val)}
+                        value={this.state.controls.password.value}
+                        valid={this.state.controls.password.valid}
+                        secureTextEntry
+                    />
+                    <Button 
+                        title="Login" 
+                        onPress={this.loginHandler}
+                        color="#ffcf5a"
+                        disabled={!this.state.controls.password.valid ||
+                        !this.state.controls.name.valid ||
+                        !this.state.controls.email.valid}></Button>
+                </View>
+            </ImageBackground>
         )
     }
 }
 
 const styles = StyleSheet.create({
+    backgroundImage: {
+        width: "100%",
+        height: "100%"
+    },
     container: {
         flex: 1,
-        flexDirection: "column"
-    },
-    map: {
-        height: '90%',
-        width: '90%',
-        backgroundColor: 'green'
-    },
-    mapContainer: {
-        flex: 2,
-        backgroundColor: 'blue',
-        alignItems: 'center',
-        justifyContent: 'center'
-
-    },
-    secondBox: {
-        flex: 1,
-        backgroundColor: 'red'
+        flexDirection: "column",
     }
 })
 
-const mapStateToProps = state => {
-    return {
-        isLoading: state.ui.isLoading
-    };
-};
 
 const mapDispatchToProps = dispatch => {
     return {
         onTestSignIn: (info) => dispatch(testSignIn(info)),
         onAutoLogin: (email) => dispatch(autoLogin(email))
-        // onTryAuth: (authData, authMode) => dispatch(tryAuth(authData, authMode)),
-        // onAutoSignIn: () => dispatch(authAutoSignIn())
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Auth);
+export default connect(null, mapDispatchToProps)(Auth);

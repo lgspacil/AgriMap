@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet, TouchableOpacity, Image, Animated } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, Animated } from "react-native";
 
 class ListItem extends Component {
 
@@ -29,15 +29,6 @@ class ListItem extends Component {
   }
 
   render(){
-    // opacity annimation
-    const opacity = this.state.animated.interpolate({
-      // for every interpolation value of 0 we will map 0
-      // then it will move to 1 with 1
-      // this is linear interpolation
-      inputRange:[0,1],
-      outputRange:[1,0]
-    })
-
     //move item to the right
     const translateX = this.state.animated.interpolate({
       inputRange:[0,1],

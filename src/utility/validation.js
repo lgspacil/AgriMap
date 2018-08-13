@@ -1,5 +1,6 @@
 const validate = (val, rules, connectedValue) => {
     let isValid = true;
+    // rules is an object so checking the value of them
     for (let rule in rules) {
         switch (rule) {
             case "isEmail":

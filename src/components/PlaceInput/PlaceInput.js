@@ -5,6 +5,7 @@ import DefaultInput from "../UI/DefaultInput/DefaultInput";
 
 const placeInput = props => (
   <DefaultInput
+    style={{color: 'white', width: '90%'}}
     placeholder="Place Name"
     value={props.placeData.value}
     valid={props.placeData.valid}

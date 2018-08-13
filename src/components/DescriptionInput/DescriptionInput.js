@@ -10,8 +10,9 @@ const descriptionInput = props => (
     onChangeText={props.onChangeText}
     style={{
         height: 100, 
-        width: '100%',
-        fontSize: 17
+        width: '90%',
+        fontSize: 17,
+        color: 'white'
       }}
   />
 );

@@ -1,28 +1,24 @@
 import React, { Component } from "react";
 import {
     View,
-    Image,
     Text,
-    Button,
     StyleSheet,
     TouchableOpacity,
     Platform,
-    Dimensions,
     ScrollView
 } from "react-native";
 import { connect } from "react-redux";
 import Icon from "react-native-vector-icons/Ionicons";
 import { deleteFarm } from "../../store/actions/index";
 import MapboxGL from "@mapbox/react-native-mapbox-gl";
-import { lineString as makeLineString, lineString } from "@turf/helpers";
-const LATITUDE = 38.79930767201779;
-const LONGITUDE = -77.12911152370515;
+import { lineString as lineString } from "@turf/helpers";
+import HeadingText from "../../components/UI/HeadingText/HeadingText";
+
 
 MapboxGL.setAccessToken('pk.eyJ1Ijoic3BhY2lsbHVjYXMiLCJhIjoiY2pra2xhaHgyMXJtZjNxcDliZW01ZHhkZyJ9.rp87COSDjcs097pfP4iFNw');
 
 class FarmDetail extends Component {
     state = {
-        viewMode: "portrait",
         modal: false,
         imageView: false,
         intCoords: null
@@ -30,7 +26,6 @@ class FarmDetail extends Component {
 
     constructor(props) {
         super(props);
-        Dimensions.addEventListener("change", this.updateStyles);
     }
 
     componentWillMount() {
@@ -48,16 +43,6 @@ class FarmDetail extends Component {
         })
 
     }
-
-    componentWillUnmount() {
-        Dimensions.removeEventListener("change", this.updateStyles);
-    }
-
-    updateStyles = dims => {
-        this.setState({
-            viewMode: dims.window.height > 500 ? "portrait" : "landscape"
-        });
-    };
 
     placeDeletedHandler = () => {
         this.props.onDeleteFarm(this.props.selectedFarm._id);
@@ -103,21 +88,21 @@ class FarmDetail extends Component {
             )
         }
         return (
-            <ScrollView>
+            <ScrollView style={styles.scrollViewContainer}>
                 <View style={styles.container}>
 
                     <View style={styles.mapContainer}>
                         {map}
                     </View>
 
-                    <View >
-                        <Text style={styles.placeName}>
+                    <View>
+                        <HeadingText>
                             {this.props.selectedFarm.name}
-                        </Text>
+                        </HeadingText>
                     </View>
 
                     <View>
-                        <Text>
+                        <Text style={{color: "white"}}>
                             {this.props.selectedFarm.description}
                         </Text>
                     </View>
@@ -128,7 +113,7 @@ class FarmDetail extends Component {
                                 <Icon
                                     size={30}
                                     name={Platform.OS === "android" ? "md-trash" : "ios-trash"}
-                                    color="red"
+                                    color="#ffcf5a"
                                 />
                             </View>
                         </TouchableOpacity>
@@ -141,11 +126,6 @@ class FarmDetail extends Component {
 }
 
 const layerStyles = MapboxGL.StyleSheet.create({
-    route: {
-        lineColor: "red",
-        lineWidth: 3,
-        lineOpacity: 0.84
-    },
     fillLayer: {
         fillAntialias: true,
         fillColor: 'green',
@@ -157,18 +137,13 @@ const layerStyles = MapboxGL.StyleSheet.create({
 const ANNOTATION_SIZE = 20;
 
 const styles = StyleSheet.create({
+    scrollViewContainer: {
+        backgroundColor: "#8c8d9f",
+        flex: 1
+    },
     container: {
         margin: 22,
-        alignItems: 'center'
-    },
-    placeImage: {
-        width: "100%",
-        height: "100%"
-    },
-    placeName: {
-        fontWeight: "bold",
-        textAlign: "center",
-        fontSize: 28
+        alignItems: 'center',
     },
     map: {
         flex: 1
@@ -183,14 +158,16 @@ const styles = StyleSheet.create({
     },
     mapContainer: {
         height: 400,
-        width: '95%'
+        width: '95%',
+        borderWidth: 4,
+        borderColor: "#ffcf5a"
     },
     annotationContainer: {
         width: ANNOTATION_SIZE,
         height: ANNOTATION_SIZE,
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "white",
+        backgroundColor: "black",
         borderRadius: ANNOTATION_SIZE / 2,
         borderWidth: StyleSheet.hairlineWidth,
         borderColor: "rgba(0, 0, 0, 0.45)"
@@ -199,7 +176,7 @@ const styles = StyleSheet.create({
         width: ANNOTATION_SIZE - 3,
         height: ANNOTATION_SIZE - 3,
         borderRadius: (ANNOTATION_SIZE - 3) / 2,
-        backgroundColor: "orange",
+        backgroundColor: "#ffcf5a",
         transform: [{ scale: 0.6 }]
     },
 });
